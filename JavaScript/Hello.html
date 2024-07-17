@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World</title>
+  </head>
+  <body>
+    <div id="msg"></div>
+    <div id="doc"></div>
+  </body>
+  <script>
+    let message = "Welcome to JavaScript";
+    // document.querySelector("#msg").innerHTML = "<h1>Hello World</h1>";
+    console.log(message);
+
+    function printMessage(elementId, format, message) {
+      document.querySelector(
+        `#${elementId}`
+      ).innerHTML = `<${format}>${message}</${format}>`;
+    }
+    printMessage("msg", "h1", "Hello World");
+  </script>
+  <sql id="query_condition">
+    <where>
+      <include refid="base_condition_filed" />
+    </where>
+  </sql>
+</html>
